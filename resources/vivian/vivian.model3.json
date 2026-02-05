@@ -1,0 +1,176 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "vivian.moc3",
+		"Expressions": [
+			{
+				"Name": "normal",
+				"File": "expressions/normal.exp3.json"
+			},
+			{
+				"Name": "cry",
+				"File": "expressions/cry.exp3.json"
+			},
+			{
+				"Name": "panic",
+				"File": "expressions/panic.exp3.json"
+			},
+			{
+				"Name": "scowl",
+				"File": "expressions/scowl.exp3.json"
+			},
+			{
+				"Name": "shy",
+				"File": "expressions/shy.exp3.json"
+			},
+			{
+				"Name": "walleye",
+				"File": "expressions/walleye.exp3.json"
+			},
+			{
+				"Name": "umbrella_close",
+				"File": "expressions/umbrella_close.exp3.json"
+			}
+		],
+		"Textures": [
+			"vivian.4096/texture_00.png",
+			"vivian.4096/texture_01.png",
+			"vivian.4096/texture_02.png",
+			"vivian.4096/texture_03.png",
+			"vivian.4096/texture_04.png",
+			"vivian.4096/texture_05.png",
+			"vivian.4096/texture_06.png",
+			"vivian.4096/texture_07.png",
+			"vivian.4096/texture_08.png",
+			"vivian.4096/texture_09.png",
+			"vivian.4096/texture_10.png"
+		],
+		"Physics": "vivian.physics3.json",
+		"DisplayInfo": "vivian.cdi3.json",
+		"Motions": {
+			"Idle": [
+				{
+					"File": "motions/Hiyori_m01.motion3.json"
+				}
+			],
+			"TapHead": [
+				{
+					"File": "motions/Hiyori_m04.motion3.json",
+					"Sound": "sounds/tap_head_01.wav",
+					"Text": "法厄同大人，您在摸薇薇安的头吗？"
+				},
+				{
+					"File": "motions/Hiyori_m03.motion3.json",
+					"Sound": "sounds/tap_head_02.wav",
+					"Text": "嗯？您还想再摸摸吗？"
+				},
+				{
+					"File": "motions/Hiyori_m02.motion3.json",
+					"Sound": "sounds/tap_head_03.wav",
+					"Text": "好舒服...谢谢您，法厄同大人。"
+				}
+			],
+			"TapBody": [
+				{
+					"File": "motions/Hiyori_m07.motion3.json",
+					"Sound": "sounds/tap_body_01.wav",
+					"Text": "嗯？！...法厄同大人，是想和薇薇安聊聊天吗？"
+				}
+			],
+			"TapFace": [
+				{
+					"File": "motions/Hiyori_m07.motion3.json",
+					"Sound": "sounds/tap_face_01.wav",
+					"Text": "嗯？...薇薇安的脸上有什么东西吗？"
+				}
+			],
+			"TapBreast": [
+				{
+					"File": "motions/Hiyori_m05.motion3.json",
+					"Sound": "sounds/tap_breast_01.wav",
+					"Text": "啊！...法厄同大人，请不要摸薇薇安的胸！"
+				},
+				{
+					"File": "motions/Hiyori_m02.motion3.json",
+					"Sound": "sounds/tap_breast_02.wav",
+					"Text": "呀！...真是的，再摸就不理你了！"
+				},
+				{
+					"File": "motions/Hiyori_m02.motion3.json",
+					"Sound": "sounds/tap_breast_03.wav",
+					"Text": "法厄同大人，你就这么喜欢薇薇安的胸部吗？"
+				}
+			],
+			"TapLeg": [
+				{
+					"File": "motions/Hiyori_m08.motion3.json",
+					"Sound": "sounds/tap_leg_01.wav",
+					"Text": "法厄同大人，是想看薇薇安的脚吗？"
+				}
+			],
+			"TapHand": [
+				{
+					"File": "motions/Hiyori_m09.motion3.json",
+					"Sound": "sounds/tap_hand_01.wav",
+					"Text": "法厄同大人的手，好温暖..."
+				},
+				{
+					"File": "motions/Hiyori_m10.motion3.json",
+					"Sound": "sounds/tap_hand_02.wav",
+					"Text": "法厄同大人，薇薇安的手也很软吧？"
+				}
+			],
+			"TapAccessories": [
+				{
+					"File": "",
+					"Sound": "sounds/tap_accessories_01.wav",
+					"Text": "怎么样，很好看吧？我也很喜欢这些饰品！"
+				}
+			],
+			"Expressions": [
+				{
+					"File": "motions/Hiyori_m02.motion3.json"
+				},
+				{
+					"File": "motions/Hiyori_m03.motion3.json"
+				},
+				{
+					"File": "motions/Hiyori_m04.motion3.json"
+				},
+				{
+					"File": "motions/Hiyori_m05.motion3.json"
+				},
+				{
+					"File": "motions/Hiyori_m06.motion3.json"
+				},
+				{
+					"File": "motions/Hiyori_m07.motion3.json"
+				},
+				{
+					"File": "motions/Hiyori_m08.motion3.json"
+				},
+				{
+					"File": "motions/Hiyori_m09.motion3.json"
+				},
+				{
+					"File": "motions/Hiyori_m10.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}

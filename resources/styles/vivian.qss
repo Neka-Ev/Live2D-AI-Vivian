@@ -1,0 +1,122 @@
+        /* 全局重置 */
+        QWidget {
+            font-family: "Microsoft YaHei UI", sans-serif;
+        }
+
+        /* 主窗口与背景 */
+        QWidget#CentralWidget {
+            background-color: #1e1e24; /* 深黑灰色 */
+        }
+
+        /* 气泡标签 (薇薇安的语音) */
+        QLabel#BubbleLabel {
+            background-color: rgba(45, 45, 53, 230);
+            border: 2px solid #C8A2C8; /* 淡紫色边框 */
+            border-radius: 15px;
+            padding: 15px;
+            color: #ffffff;
+            font-size: 14pt;
+            font-weight: bold;
+        }
+
+        /* 控制区域 */
+        QFrame#ControlsFrame {
+            background-color: #25252b;
+            border-top: 2px solid #C8A2C8;
+        }
+
+        /* 状态标签 */
+        QLabel#StatusLabel {
+            color: #C8A2C8; /* 淡紫色文本 */
+            font-size: 11pt;
+            font-style: italic;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+
+        /* 语音按钮 */
+        QPushButton#VoiceBtn {
+            background-color: #3e3e4a;
+            border: 2px solid #5a5a65;
+            border-radius: 30px; /* 圆形 */
+            color: #e0e0e0;
+            font-size: 24px;
+            padding-bottom: 3px;
+        }
+        QPushButton#VoiceBtn:hover {
+            background-color: #4e4e5e;
+            border-color: #C8A2C8;
+        }
+        QPushButton#VoiceBtn:pressed {
+            background-color: #9b72aa; /* 深紫色 */
+            color: white;
+            border-color: #C8A2C8;
+        }
+
+        /* 语音单选框 */
+        QRadioButton#VoiceRadio {
+            color: #a0a0a0;
+            font-size: 9pt;
+        }
+        QRadioButton#VoiceRadio::indicator {
+            width: 12px;
+            height: 12px;
+        }
+        QRadioButton#VoiceRadio::indicator:unchecked {
+            border: 1px solid #777;
+            border-radius: 6px;
+            background: rgba(0,0,0,0);
+        }
+        QRadioButton#VoiceRadio::indicator:checked {
+            border: 1px solid #C8A2C8;
+            border-radius: 6px;
+            background: #C8A2C8;
+        }
+
+        /* 聊天输入框区域 */
+        QTextEdit#ChatInput {
+            background-color: #33333d;
+            border: 1px solid #4a4a55;
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 12pt;
+            padding: 5px;
+            selection-background-color: #C8A2C8;
+            selection-color: #000;
+        }
+        QTextEdit#ChatInput:focus {
+            border: 1px solid #C8A2C8;
+            background-color: #3a3a45;
+        }
+
+        /* 输入框内的清除按钮 */
+        QToolButton#ClearBtn {
+            border: none;
+            background: transparent;
+            font-weight: bold;
+            color: #777;
+        }
+        QToolButton#ClearBtn:hover {
+            color: #C8A2C8;
+        }
+
+        /* 发送按钮 */
+        QPushButton#SendBtn {
+            background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #C8A2C8, stop:1 #9370DB); /* 淡紫色到中紫色 */
+            color: white;
+            font-size: 12pt;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+        }
+        QPushButton#SendBtn:hover {
+            background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #dcc2dc, stop:1 #a284e0);
+        }
+        QPushButton#SendBtn:pressed {
+            background-color: #7b5aa6;
+            padding-top: 2px;
+        }
+        QPushButton#SendBtn:disabled {
+            background-color: #555;
+            color: #888;
+        }
