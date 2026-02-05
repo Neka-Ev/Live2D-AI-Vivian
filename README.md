@@ -19,7 +19,9 @@
 <div align="center">
 
 ![Python Badge](https://img.shields.io/badge/Python3-3776AB?logo=python&logoColor=fff&style=for-the-badge) ![Qt Badge](https://img.shields.io/badge/Qt5-41CD52?logo=qt&logoColor=fff&style=for-the-badge)  ![OpenGL Badge](https://img.shields.io/badge/OpenGL-5586A4?logo=opengl&logoColor=fff&style=for-the-badge) ![FastAPI Badge](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=fff&style=for-the-badge)
+
 ![DeepSeek AI](https://img.shields.io/badge/Deepseek-LLM-0081A5?logoColor=fff&style=for-the-badge)  ![Qwen3-ASR](https://img.shields.io/badge/Qwen3/iFlytek-ASR-FF6F00?style=for-the-badge&logoColor=white) ![GPT-SoVITS Badge](https://img.shields.io/badge/GPT--SoVITS-tts-8322FF?logoColor=fff&style=for-the-badge)
+
 ![miHoYo Badge](https://img.shields.io/badge/miHoYo-4EA4DD?logo=mihoyo&logoColor=fff&style=for-the-badge) ![PyTorch Badge](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=fff&style=for-the-badge) ![PyCharm Badge](https://img.shields.io/badge/PyCharm-000?logo=pycharm&logoColor=fff&style=for-the-badge) ![License](https://img.shields.io/github/license/Neka-Ev/Live2D-AI-Vivian?style=for-the-badge&color=blue)
 </div>
 
@@ -81,14 +83,17 @@ pip install -r requirements.txt
 
 本项目在 `backend_adapters` 目录中提供了针对特定模型的适配器(~~其实就是api文件~~)
 * **ASR (Qwen3-ASR)**:
+
     项目使用**Qwen3-ASR模型**作为本地ASR模型部署，只需按照[Qwen3-ASR官方文档](https://github.com/QwenLM/Qwen3-ASR)要求，部署ASR到本地(*使用文档的快速开始即可，不需要使用vLLM*)
     再将 `backend_adapters/Qwen3-ASR/asr_server_api.py` 复制到 **Qwen3-ASR 项目根目录**中运行
 
 * **TTS (GPT-SoVITS)**:
+
     项目使用**GPT-SoVITS模型**作为本地TTS模型部署，只需按照[GPT-SoVITS官方文档](https://github.com/RVC-Boss/GPT-SoVITS)要求，部署TTS项目到本地
     再将 `backend_adapters/GPT-SoVITS/api_v2.py` 替换 GPT-SoVITS 项目目录下的**api_v2.py**文件，确保接口与客户端高度匹配
     同时，项目使用的声音预训练模型需要从Model Scope的项目模型库下载薇薇安声音模型（[链接](https://modelscope.cn/models/aihobbyist/GPT-SoVITS_Model_Collection/tree/master/%E7%BB%9D%E5%8C%BA%E9%9B%B6/%E4%B8%AD%E6%96%87)），再将pth与ckpt文件的实际路径分别替换至`backend_adapters`下的yaml文件中，再使用此yaml文件替换tts项目`GPT-SoVITS/configs/tts_infer.yaml`文件
     ![tts-yaml](resources/readme-src/tts-yaml.png)
+
     最后，将`reference_audios`文件夹下的normal.wav路径确保与.env中的路径一致（这里就可以看出来，若想换音色，只需要让.env的参考音频路径指向新的音频，**但由于是相对tts项目的路径，所以不使用绝对路径情况下需要保证tts项目的api_v2.py能够找到**）
     ![tts-env](resources/readme-src/tts-env.png)
 
