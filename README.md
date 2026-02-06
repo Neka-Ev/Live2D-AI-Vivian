@@ -66,7 +66,7 @@
 Python 3.9+即可
 
 ```bash
-git clone https://github.com/your-username/Live2D-AI-Vivian.git
+git clone https://github.com/Neka-Ev/Live2D-AI-Vivian.git
 cd Live2D-AI-Vivian
 pip install -r requirements.txt
 ```
@@ -152,5 +152,5 @@ python app_main.py
 - **所使用的 Live2D 模型为作者获得的免费模型， 模型作者：[bilibili 涉谷芒](https://space.bilibili.com/2539974?spm_id_from=333.337.0.0)老师**
 
 <p align="center">
-Made with ❤️ by <a href=https://github.com/Neka-Ev>Neka-ev</a>
+Made with ❤️ by <a href=https://github.com/Neka-Ev>Neka-Ev</a>
 </p>
